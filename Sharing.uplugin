@@ -1,0 +1,21 @@
+{
+	"FileVersion" : 3,
+	
+	"FriendlyName" : "Sharing",
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"CreatedBy" : "Get Set Games Inc.",
+	"CreatedByURL" : "https://github.com/getsetgames/Sharing",
+	"EngineVersion" : "4.7.0",
+	"Description" : "This plugin enables native sharing on iOS.",
+	"Category" : "Developer",
+	"EnabledByDefault" : false,
+	
+	"Modules" :
+	[
+		{
+			"Name" : "Sharing",
+			"Type" : "Runtime"
+		}
+	]
+}
