@@ -40,7 +40,7 @@ public:
 };
 
 UCLASS(ClassGroup=Utility, HideCategories=(Activation, "Components|Activation", Collision), meta=(BlueprintSpawnableComponent))
-class ENGINE_API UScreenshotComponent : public UActorComponent
+class UScreenshotComponent : public UActorComponent
 {
 	GENERATED_UCLASS_BODY()
 	
