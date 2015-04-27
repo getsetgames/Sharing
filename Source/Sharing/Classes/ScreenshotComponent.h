@@ -42,7 +42,7 @@ public:
 UCLASS(ClassGroup=Utility, HideCategories=(Activation, "Components|Activation", Collision), meta=(BlueprintSpawnableComponent))
 class UScreenshotComponent : public UActorComponent
 {
-	GENERATED_UCLASS_BODY()
+	GENERATED_BODY()
 	
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FScreenshotCapturedTextureDelegate, UTexture2D*, Texture);
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FScreenshotCapturedImageDelegate, FScreenshotImage, Image);

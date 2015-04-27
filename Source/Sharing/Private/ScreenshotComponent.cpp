@@ -5,11 +5,6 @@
 
 #include "SharingPrivatePCH.h"
 
-UScreenshotComponent::UScreenshotComponent(const FObjectInitializer& ObjectInitializer)
-	: Super(ObjectInitializer)
-{
-}
-
 void UScreenshotComponent::OnRegister()
 {
 	Super::OnRegister();
