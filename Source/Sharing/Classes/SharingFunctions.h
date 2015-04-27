@@ -21,5 +21,5 @@ public:
 	 * @param Origin If specified, this will be the origin of the sharing popover on iPad
 	 */
 	UFUNCTION(BlueprintCallable, Category = Sharing)
-	static void Share(FString EmailSubject, FString Message, FString Url, FVector2D Origin = FVector2D(0,0));
+	static void Share(FString EmailSubject, FString Message, FString Url, FScreenshotImage Image, FVector2D Origin = FVector2D(0,0));
 };
