@@ -27,8 +27,8 @@ public:
 		
 	}
 
-	FScreenshotImage(TArray<FColor> Pixels, int32 Width, int32 Height)
-	: Pixels(Pixels), Width(Width), Height(Height)
+	FScreenshotImage(TArray<FColor> InPixels, int32 InWidth, int32 InHeight)
+	: Pixels(InPixels), Width(InWidth), Height(InHeight)
 	{
 		
 	}
