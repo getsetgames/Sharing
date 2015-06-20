@@ -28,10 +28,13 @@ void UScreenshotComponent::ScreenshotCapturedDelegate_Handler(int32 Width, int32
 		
 		uint8* MipData = static_cast<uint8*>(Mip.BulkData.Lock(LOCK_READ_WRITE));
 		
-		for(int32 y = 0; y < Height; y++)
+		for(int32 y = Height-1; y >= 0; y--)
 		{
-			uint8* DestPtr = &MipData[(Height - 1 - y) * Width * sizeof(FColor)];
-			int32 PixelIndex = (Height - 1 - y) * Width;
+			uint8* DestPtr = &MipData[y * Width * sizeof(FColor)];
+			int32 PixelIndex = y * Width;
+#if PLATFORM_IOS
+			PixelIndex = Pixels.Num() - PixelIndex - 1;
+#endif
 			if (Pixels.IsValidIndex(PixelIndex))
 			{
 				FColor* SrcPtr = const_cast<FColor*>(&Pixels[PixelIndex]);
