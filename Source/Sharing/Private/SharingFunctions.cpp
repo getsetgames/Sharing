@@ -3,6 +3,7 @@
 //  Copyright (c) 2015 Get Set Games Inc. All rights reserved.
 //
 
+#include "SharingFunctions.h"
 #include "SharingPrivatePCH.h"
 
 #if PLATFORM_IOS

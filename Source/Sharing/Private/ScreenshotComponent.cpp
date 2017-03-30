@@ -3,6 +3,7 @@
 //  Copyright (c) 2014 Get Set Games Inc. All rights reserved.
 //
 
+#include "ScreenshotComponent.h"
 #include "SharingPrivatePCH.h"
 
 void UScreenshotComponent::OnRegister()
