@@ -5,6 +5,7 @@
 
 #pragma once
 
+#include "Components/ActorComponent.h"
 #include "ScreenshotComponent.generated.h"
 
 USTRUCT(BlueprintType)
