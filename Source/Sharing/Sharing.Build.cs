@@ -7,7 +7,7 @@ namespace UnrealBuildTool.Rules
 {
 	public class Sharing : ModuleRules
 	{
-		public Sharing(TargetInfo Target)
+		public Sharing(ReadOnlyTargetRules Target) : base(Target)
 		{
 			PublicIncludePaths.AddRange(
 				new string[] {
