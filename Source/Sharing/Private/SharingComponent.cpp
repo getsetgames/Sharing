@@ -4,6 +4,7 @@
 //
 
 #include "SharingPrivatePCH.h"
+#include "SharingComponent.h"
 
 void USharingComponent::OnRegister()
 {

@@ -5,6 +5,9 @@
 
 #pragma once
 
+#include "UObject/Object.h"
+#include "UObject/ScriptMacros.h"
+#include "ScreenshotComponent.h"
 #include "SharingFunctions.generated.h"
 
 UCLASS(NotBlueprintable)

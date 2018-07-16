@@ -5,6 +5,7 @@
 
 #pragma once
 
+#include "Components/ActorComponent.h"
 #include "SharingComponent.generated.h"
 
 UCLASS(ClassGroup=Sharing, HideCategories=(Activation, "Components|Activation", Collision), meta=(BlueprintSpawnableComponent))
