@@ -4,6 +4,7 @@
 //
 
 #include "SharingPrivatePCH.h"
+#include "SharingFunctions.h"
 
 #if PLATFORM_IOS
 #import "IOSAppDelegate.h"
@@ -33,7 +34,7 @@ void USharingFunctions::Share(FString EmailSubject, FString Message, FString Url
 		TArray<uint8> NewPixels;
 		NewPixels.Reserve(Image.Pixels.Num() * 4);
 		
-		for(int32 y = 0; y < Height; y++)
+		for(int32 y = Height-1; y >= 0; y--)
 		{
 			int32 PixelIndex = (Height - 1 - y) * Width;
 			if (Image.Pixels.IsValidIndex(PixelIndex))
